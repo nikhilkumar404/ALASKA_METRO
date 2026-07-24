@@ -1,0 +1,12 @@
+node_modules/
+.env
+dist/
+build/
+.DS_Store
+*.log
+coverage/
+.next/
+out/
+*QUESTION*.md
+PROJECT_CONTEXT_FOR_LLMS.md
+PROJECT_EXPLANATION_SCRIPT.md
