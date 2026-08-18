@@ -26,6 +26,7 @@ const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:3000",
   "https://alaska-69fq.vercel.app",
+  "https://alaska-metro.vercel.app",
 ];
 
 if (process.env.FRONTEND_URL) {
