@@ -1,3 +1,4 @@
+import { API_URL } from "../../../config";
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -9,7 +10,7 @@ interface MapOverlayProps {
   onSubmit: () => void; // Unused after logic migration, keeping interface intact for mapbox.tsx
 }
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+
 
 export default function MapOverlay({ customPath }: MapOverlayProps) {
   const { user, token } = useAuthStore();

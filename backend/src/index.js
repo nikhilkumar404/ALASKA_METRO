@@ -28,6 +28,10 @@ const allowedOrigins = [
   "https://alaska-69fq.vercel.app",
 ];
 
+if (process.env.FRONTEND_URL) {
+  allowedOrigins.push(process.env.FRONTEND_URL);
+}
+
 // ─── CORS: Manually set headers as the VERY FIRST middleware ───────────────
 // This runs before anything else — even if something below crashes,
 // the browser will still get CORS headers and won't show CORS errors.

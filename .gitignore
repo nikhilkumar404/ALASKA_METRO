@@ -7,6 +7,7 @@ build/
 coverage/
 .next/
 out/
+DEPLOYMENT.md
 *QUESTION*.md
 PROJECT_CONTEXT_FOR_LLMS.md
 PROJECT_EXPLANATION_SCRIPT.md

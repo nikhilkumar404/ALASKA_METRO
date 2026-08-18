@@ -1,3 +1,4 @@
+import { API_URL } from "../../../config";
 import { useState } from "react";
 import axios from "axios";
 import { useAuthStore } from "../../../store/useAuthStore";
@@ -29,8 +30,7 @@ export default function EditReviewModal({
     setLoading(true);
     setError(null);
     try {
-      const API_URL =
-        import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+      
       await axios.put(
         `${API_URL}/reviews/${review.id}`,
         { rating, comment },

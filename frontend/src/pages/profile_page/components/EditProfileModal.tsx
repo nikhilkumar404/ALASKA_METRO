@@ -1,3 +1,4 @@
+import { API_URL } from "../../../config";
 import { useState } from "react";
 import { useAuthStore } from "../../../store/useAuthStore";
 import axios from "axios";
@@ -72,8 +73,7 @@ export default function EditProfileModal({
     setLoading(true);
     setError(null);
     try {
-      const API_URL =
-        import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+      
       const res = await axios.put(`${API_URL}/users/${user.id}`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,

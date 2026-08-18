@@ -1,3 +1,4 @@
+import { API_URL } from "../config";
 import { create } from "zustand";
 import axios from "axios";
 import Cookies from "js-cookie";
@@ -25,7 +26,7 @@ interface AuthState {
 }
 
 // Ensure the base URL matches your backend environment
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+
 
 export const useAuthStore = create<AuthState>()((set) => {
   let initialUser = null;
