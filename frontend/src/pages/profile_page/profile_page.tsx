@@ -1,3 +1,4 @@
+import { API_URL } from "../../config";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
@@ -15,7 +16,7 @@ import {
   FriendsListCard,
 } from "./components";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+
 
 export default function ProfilePage() {
   const { user, token, isLoading, isAuthenticated, checkAuth } = useAuthStore();

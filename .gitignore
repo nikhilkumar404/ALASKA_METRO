@@ -1,5 +1,6 @@
 node_modules/
 .env
+.env.example
 dist/
 build/
 .DS_Store
@@ -7,6 +8,7 @@ build/
 coverage/
 .next/
 out/
+DEPLOYMENT.md
 *QUESTION*.md
 PROJECT_CONTEXT_FOR_LLMS.md
 PROJECT_EXPLANATION_SCRIPT.md

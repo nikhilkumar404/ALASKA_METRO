@@ -1,3 +1,4 @@
+import { API_URL, SOCKET_URL } from "../../config";
 import { useState, useEffect, useMemo } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { ChatSidebar, ChatWindow, EmptyChatState } from "./components";
@@ -6,10 +7,8 @@ import axios from "axios";
 import { io, Socket } from "socket.io-client";
 import type { Message, User as ChatUser } from "./types";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
-const SOCKET_URL = import.meta.env.VITE_API_URL
-  ? import.meta.env.VITE_API_URL.replace("/api", "")
-  : "http://localhost:3000";
+
+
 
 interface BackendChat {
   id: string;

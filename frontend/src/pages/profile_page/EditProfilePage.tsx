@@ -1,3 +1,4 @@
+import { API_URL } from "../../config";
 import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../store/useAuthStore";
@@ -17,7 +18,7 @@ import {
   X,
 } from "lucide-react";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
+
 
 export default function EditProfilePage() {
   const { user, token, isLoading, isAuthenticated, checkAuth } = useAuthStore();
